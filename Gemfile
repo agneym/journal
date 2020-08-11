@@ -30,9 +30,6 @@ gem "honeybadger", "~> 4.7"
 # Bootstrap framework
 gem "bootstrap", "~> 4.4.1"
 
-# Fonts
-gem "font-awesome-sass", "~> 4.3.0"
-
 # Support cross-browser css compatibilty
 gem "autoprefixer-rails"
 

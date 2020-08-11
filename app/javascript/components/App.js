@@ -1,7 +1,6 @@
 import React, { Component, Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../styles";
-import "remixicon/fonts/remixicon.css";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 
