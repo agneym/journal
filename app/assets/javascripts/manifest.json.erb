@@ -1,7 +1,7 @@
 <% icon_sizes = Rails.configuration.serviceworker.icon_sizes %>
 {
-  "name": "My Progressive Rails App",
-  "short_name": "Progressive",
+  "name": "Journal - Coronasafe",
+  "short_name": "Journal",
   "start_url": "/",
   "icons": [
   <% icon_sizes.map { |s| "#{s}x#{s}" }.each.with_index do |dim, i| %>
@@ -12,8 +12,17 @@
     }<%= i == (icon_sizes.length - 1) ? '' : ',' %>
   <% end %>
   ],
-  "theme_color": "#000000",
+  "theme_color": "#5850ec",
+  "shortcuts": [
+    {
+      "name": "Scan QR Code",
+      "short_name": "Scan",
+      "description": "Mark entry to an establishment by scanning QR Code",
+      "url": "/user/scan",
+      "icons": [{ "src": "/images/scan.png", "sizes": "192x192" }]
+    }
+  ],
   "background_color": "#FFFFFF",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait"
 }

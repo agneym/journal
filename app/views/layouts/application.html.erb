@@ -3,12 +3,20 @@
   <head>
     <title>Journal - Coronasafe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.motionblurjs.com/blur.js"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-  <link rel="manifest" href="/manifest.json" />
-<meta name="apple-mobile-web-app-capable" content="yes"></head>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes"></head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="theme-color" content="#5850ec">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="apple-touch-icon" sizes="180x180" href=<%= image_path("apple-touch-icon.png") %>>
+    <link rel="icon" type="image/png" sizes="32x32" href=<%= image_path("favicon-32x32.png") %>>
+    <link rel="icon" type="image/png" sizes="16x16" href=<%= image_path("favicon-16x16.png") %>>
   <body>
     <%= yield %>
   </body>
