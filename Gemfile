@@ -135,5 +135,8 @@ end
 # To inject React components in views and pass props from server
 gem "react-rails", "~> 2.6"
 
+# Generate service worker and related code
+gem "serviceworker-rails"
+
 # For Google Login
 gem "omniauth-google-oauth2", "~> 0.8.0"

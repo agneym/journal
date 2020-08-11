@@ -3,3 +3,4 @@
 //= require popper
 //= require bootstrap
 //= require_tree ./common
+//= require serviceworker-companion
